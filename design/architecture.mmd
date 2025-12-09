@@ -1,0 +1,14 @@
+architecture-beta
+    group UI[UI]
+    group logic[Domain Logic]
+    group tech[Technical Services]
+    service CLI(server)[CLI] in UI
+    service app(server)[App Class] in logic
+    service runner(server)[Runner Class] in logic
+    service allergy(disk)[AllergyInfo class] in tech
+    service google(cloud)[GoogleMaps class] in tech
+    service location(disk)[UserLocation class] in tech
+    service organizer(disk)[DataOrganizer class] in tech
+    app{group}:B -- T:allergy{group}
+    runner:R --> L:app
+    CLI{group}:B --> T:runner

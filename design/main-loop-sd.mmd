@@ -1,0 +1,23 @@
+sequenceDiagram
+    actor User
+    participant Runner
+    participant App
+    participant AllergyInfo
+    participant GoogleMaps
+
+    User ->> Runner: Inputs name and allergies
+    Runner ->> App: add_allergy_info(name, allergies)
+    App ->> AllergyInfo: update_allergy(name, allergies)/add_new_user_with_allergy(name, allergies)
+    User ->> Runner: Selects New Hampshire location
+    Runner ->> App: generate_report(name, location)
+    App ->> App: fetch_air_data()
+    App ->> GoogleMaps: save_to_csv()
+    App ->> App: self.get_allergy_info()
+    App ->> AllergyInfo: get_allergy_info()
+    AllergyInfo ->> App: returns list of allergies
+    App ->> DataOrganizer: return_all_info()
+    DataOrganizer ->> App: returns list of plant species, lastest air quality info, and the list of pollen types
+    App ->> App: finds matching allergens and generates report
+    App ->> App: saves report to CSV
+
+

@@ -1,0 +1,11 @@
+sequenceDiagram
+    Actor User
+    Participant Runner
+    Participant App
+    Participant AllergyInfo
+    Participant AllergyCSV
+    User ->> Runner : Inputs name
+    User ->> Runner : Inputs allergy
+    Runner ->> App : Calls add_allergy_info(allergy)
+    App ->> AllergyInfo : Calls add_new_user_with_allergy(name, allergy)
+    AllergyInfo ->> AllergyCSV : Updates the CSV file with a new user and their first allergy

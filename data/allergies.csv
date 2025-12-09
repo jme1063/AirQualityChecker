@@ -1,0 +1,96 @@
+Name,AllergyList
+Test,"['976', '181']"
+NewUser,"[""pollen"", ""dust""]"
+Matti,['Maple']
+NewUser476,"[""pollen"", ""dust""]"
+NewUser669,"[""pollen"", ""dust""]"
+NewUser649,"[""pollen"", ""dust""]"
+NewUser306,"[""pollen"", ""dust""]"
+AllergyUserNoAllergies15,[]
+AllergyUserNoAllergies837,[]
+TestUser245,['cat dander']
+NewUser696,"[""pollen"", ""dust""]"
+AllergyUserNoAllergies166,[]
+NewUser652,"[""pollen"", ""dust""]"
+AllergyUserNoAllergies761,"[""Grass"", ""Elm""]"
+AllergyUserNoAllergies503,[]
+TestUser938,testAllergy
+TestUser218,testAllergy
+TestUser528,"['pollen', 'dust']"
+TestUser181,"['pollen', 'dust']"
+TestUser665,testAllergy
+TestUser881,"['pollen', 'dust']"
+TestUser644449,testAllergy
+TestUser477,"['pollen', 'dust']"
+TestUser436460,['testAllergy']
+TestUser173,"['pollen', 'dust']"
+TestUser209968,[['testAllergy']]
+TestUser310,"['pollen', 'dust']"
+TestUser433959,[['testAllergy']]
+TestUser741,"['pollen', 'dust']"
+TestUser797258,['testAllergy']
+TestUser348,"['pollen', 'dust']"
+TestUser938120,['testAllergy']
+TestUser193,"['pollen', 'dust']"
+TestUser568600,['Ragweed']
+TestUser186492,['Ragweed']
+TestUser713551,['Ragweed']
+TestUser560323,['Ragweed']
+TestUser527460,['Ragweed']
+TestUser212244,['Ragweed']
+NewUser320,"[""pollen"", ""dust""]"
+AllergyUserNoAllergies520,"[""Grass"", ""Elm""]"
+AllergyUserNoAllergies939,[]
+TestUser499025,['Ragweed']
+TestUser885716,['Ragweed']
+TestUser198925,['Ragweed']
+TestUser448236,['testAllergy']
+TestUser822,"['pollen', 'dust']"
+TestUser173858,['Ragweed']
+TestUser850166,['Ragweed']
+NewUser836,"[""pollen"", ""dust""]"
+AllergyUserNoAllergies8,"[""Grass"", ""Elm""]"
+AllergyUserNoAllergies893,[]
+TestUser806696,['Ragweed']
+TestUser806697,['Juniper']
+TestUser235056,['Ragweed']
+TestUser658104,['Ragweed']
+TestUser698055,['Ragweed']
+TestUser722085,['Ragweed']
+TestUser941370,['Ragweed']
+TestUser181419,['Ragweed']
+TestUser97886,['testAllergy']
+TestUser609,"['pollen', 'dust']"
+NewUser99,"[""pollen"", ""dust""]"
+AllergyUserNoAllergies955,"[""Grass"", ""Elm""]"
+AllergyUserNoAllergies660,[]
+Jacqueline,['Tree']
+NewUser671,"[""pollen"", ""dust""]"
+AllergyUserNoAllergies368,"[""Grass"", ""Elm""]"
+AllergyUserNoAllergies932,[]
+TestUser317,"['pollen', 'dust']"
+TestUser737222,['testAllergy']
+TestUser845,"['pollen', 'dust']"
+TestUser334127,['testAllergy']
+TestUser534,"['pollen', 'dust']"
+Owen,['oak']
+Bob,['oak']
+TestUser865,['cat dander']
+TestUser632130,['testAllergy']
+TestUser342,"['pollen', 'dust']"
+TestUser649,['cat dander']
+TestUser836,['cat dander']
+AllergyUserNoAllergies526,"[""Grass"", ""Elm""]"
+Bobert,"['Maple', 'Oak']"
+asdasdaasdasd,['oak']
+Blorben,"['Oak', 'Maple']"
+Greg,['Maple']
+Gregbert,"['Maple', 'Maple', 'Oak']"
+John,['Oak']
+Goober,['Maple']
+Bobby,"['Oak', 'Maple']"
+ACSoverride,['Maple']
+Glenbert,['Maples']
+TestUser781,['cat dander']
+Glorba,['286']
+Glorbobinson,"['Ragweed', 'Maple', 'Oak']"

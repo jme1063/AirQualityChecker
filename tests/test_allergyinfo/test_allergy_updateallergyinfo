@@ -1,0 +1,26 @@
+import os
+import sys
+import csv
+import random
+import unittest
+sys.path.append('src')
+from allergy_info import AllergyInfo
+class test(unittest.TestCase):
+
+    def test_update_allergy(self):
+        """Test updating allergy info for an existing user"""
+        info = AllergyInfo()
+        self.assertFalse(info.update_allergy("Test", str(random.randint(1, 1000))), None)
+
+    def test_update_allergy_non_existing_user(self):
+        """Test updating allergy info for a non-existing user"""
+        allergy = str(random.randint(1, 1000))
+        name = "NonExistingUser"
+        info = AllergyInfo()
+        info.update_allergy(name, allergy)
+        response = info.get_allergy_info(name)
+        self.assertTrue(response is None)
+
+
+if __name__ == '__main__':
+    unittest.main()

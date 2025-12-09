@@ -1,0 +1,15 @@
+sequenceDiagram
+    Actor User
+    Participant Runner
+    Participant App
+    Participant GoogleMaps
+    Participant APIService
+    User ->> Runner : Requests report
+    Runner ->> App : Calls generate_report()
+    App ->> App : calls fetch_air_data()
+    App ->> GoogleMaps : calls save_to_csv()
+    App ->> GoogleMaps : calls either get_pollen_info and get_allergy_info methods
+    GoogleMaps ->> GoogleMaps : Calls get_forecast_pollen(user_location) and get_current_conditions_quality(user_location)
+    GoogleMaps ->> APIService : Makes a HTTPS request to the Google Maps API
+    APIService ->> GoogleMaps : Returns a JSON with air quality or pollen information
+    GoogleMaps ->> GoogleMaps : Returns the JSON to the get info methods

@@ -1,0 +1,8 @@
+sequenceDiagram
+    Actor User
+    Participant System
+
+    User ->> System : Inputs name to logs in with name
+    User ->> System : Inputs allergy information to add to their profile
+    System -->> User : Confirms allergy update
+    System -->> User : Confirms whether user wants to add another allergy
