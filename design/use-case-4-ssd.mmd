@@ -1,0 +1,8 @@
+sequenceDiagram
+    Actor User
+    Participant System
+    User ->> System : Inputs name
+    User ->> System : Selects New Hampshire location
+    User ->> System : User requests report
+    System -->> User : Provides air quality and pollen report
+    System -->> User : Confirms report saved to CSV

@@ -1,0 +1,70 @@
+classDiagram
+    %% === CLASSES ===
+    class User {
+        +Input~string~ allergies
+        +Input~string~ location
+        +viewReport(Report)
+    }
+
+    class DataOrganizer {
+        +String scritpt_dir
+        +String project_dir
+        +String input_file
+        +String output_file
+        +get_all_pollen_types()
+        +get_all_plant_species()
+        +get_air_quality()
+        +sort_csv_file()
+        +return_all_info()
+    }
+    class Runner{
+        +GoogleMaps mapsAPI
+        +AllergyInfo allergyInfo
+    }
+
+    class App {
+        +String name
+        +UserLocation user_location
+        +GoogleMaps maps_api
+        +AllergyInfo allergy_info
+        +get_allergy_info(String allergy)
+        +fetch_air_data()
+        +generate_report(string csv_path)
+        +add_allergy_info(String allergy)
+        +set_user_location(location)
+    }
+
+    class UserLocation {
+        +float latitude
+        +float longitude
+        +String name
+        +__str__()
+        +from_csv_row(dict row_data)
+        +load_from_csv(String file_path)
+    }
+
+    class GoogleMaps {
+        +String api_key
+        +get_current_conditions_quality(UserLocation user_location)
+        +get_forecast_pollen(UserLocation user_location)
+        +get_air_quality_info(String location_name, String location_name)
+        +get_pollen_info(String location_name, UserLocation user_location)
+        +save_to_csv(UserLocation user_location)
+        +returns pollenData
+    }
+
+    class AllergyInfo {
+        +update_allergy(String name, String allergy)
+        +add_new_user_with_allergy(String name, String allergy)
+        +add_new_user(String name)
+        +get_allergy_info(String name)
+    }
+
+
+     %% === RELATIONSHIPS ===
+    User --> Runner: main loop that user inteacts with
+    Runner --> App : orchestrates app functionality
+    App --> GoogleMaps : fetches air/pollen info based on GPS location and given allergy info
+    App --> AllergyInfo : checks allergens to look for in google maps
+    App --> UserLocation : Location information that is used in the Google Maps API calls
+    App --> DataOrganizer : organizes data fetched from Google Maps API into useful format

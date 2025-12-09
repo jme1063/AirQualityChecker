@@ -1,0 +1,16 @@
+sequenceDiagram
+    Actor User
+    Participant Runner
+    Participant GoogleMaps
+    Participant APIService
+    Participant CSVFile
+    User ->> Runner : Requests report
+    Runner ->> Runner : Creates GoogleMap object
+    Runner ->> GoogleMaps : Calls the save_to_csv method
+    GoogleMaps ->> GoogleMaps : Calls get_pollen_info(location_name, user_location)/get_air_quality_info(location_name, user_location) methods
+    GoogleMaps ->> GoogleMaps : Calls get_forecast_pollen(user_location)/get_current_conditions_quality(user_location)
+    GoogleMaps ->> APIService : Makes a HTTPS request to the Google Maps API
+    APIService ->> GoogleMaps : Returns a JSON with air quality or pollen information
+    GoogleMaps ->> GoogleMaps : Returns the JSON
+    GoogleMaps ->> CSVFile : Saves specified location to the CSV file
+    GoogleMaps ->> Runner : Returns data saved to the file

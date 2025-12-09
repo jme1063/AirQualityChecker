@@ -1,0 +1,19 @@
+classDiagram
+    class User
+    class Allergies
+    class Air Quality
+    class Google Maps
+    class User Location
+    class Application
+    class Pollen
+    class Data
+    User --> Application: User uses Application
+    User --> Allergies: User has Allergies
+    Google Maps --> AirQuality: Google Maps collects air quality
+    Google Maps --> Pollen: Google Maps collects pollen information
+    Application --> User Location: Application takes coordinates
+    User --> User Location: User specifies location
+    Application --> Allergies: Saves Allergies
+    Application --> Google Maps: Gets information from Google Maps
+    Application --> Data: Pulls out information for user
+    GoogleMaps --> Data: Hands over information to sort

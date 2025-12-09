@@ -1,0 +1,10 @@
+sequenceDiagram
+    Actor User
+    Participant Runner
+    Participant App
+    Participant AllergyInfo
+    Participant AllergyCSV
+    User ->> Runner : Requests to update allergy
+    Runner ->> App : Calls add_allergy_info(name, allergy)
+    App ->> AllergyInfo : Calls update_allergy(name, new_allergy)
+    AllergyInfo ->> AllergyCSV : Updates the CSV file with new allergy information

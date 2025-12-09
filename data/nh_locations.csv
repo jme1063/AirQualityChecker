@@ -1,0 +1,16 @@
+name,latitude,longitude,type,county
+Manchester,42.9956,-71.4548,city,Hillsborough
+Nashua,42.7654,-71.4676,city,Hillsborough
+Concord,43.2081,-71.5376,city,Merrimack
+Dover,43.1979,-70.8737,city,Strafford
+Rochester,43.3042,-70.9759,city,Strafford
+Salem,42.7876,-71.2011,town,Rockingham
+Merrimack,42.8651,-71.4990,town,Hillsborough
+Portsmouth,43.0718,-70.7626,city,Rockingham
+Keene,42.9342,-72.2781,city,Cheshire
+Lebanon,43.6422,-72.2517,city,Grafton
+Berlin,44.4687,-71.1851,city,Coos
+Laconia,43.5276,-71.4703,city,Belknap
+Claremont,43.3767,-72.3465,city,Sullivan
+Hudson,42.7659,-71.4342,town,Hillsborough
+Londonderry,42.8651,-71.3740,town,Rockingham
